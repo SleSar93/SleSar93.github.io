@@ -39,19 +39,20 @@ header {
 	color: #fff;
 	text-transform: uppercase;
 }
-.main_navbar a {
-	display: inline-block;
+.main_navbar ul li {
+	padding: 0;
 }
 header nav {
 	margin-top: 25px;
 	
 }
-header nav ul li {
+header nav ul li a {
 	color: #fff;
 	font-family: Lato-Bold;
 	text-transform: uppercase;
 	margin-left: 15px;
 	font-size: 14px;
+	
 }
 header nav ul a:hover {
 	text-decoration: none;
