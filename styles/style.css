@@ -39,7 +39,7 @@ header {
 	color: #fff;
 	text-transform: uppercase;
 }
-.main_navbar ul li {
+.main_navbar ul  li {
 	padding: 0;
 }
 header nav {
@@ -129,16 +129,24 @@ header p span {
 #about ul li strong {
 	font-family: OpenSans-SemiBold;
 }
-#about button{
+#about button {
 	text-transform: uppercase;
 	font-family: OpenSans-SemiBold;
 	font-size: 12px;
-	color: #616161;
 	border: 1px solid #7f7f7f;
 	border-radius: 2px;
 	background-color: #fff;
 	padding: 13px 30px 13px 40px;
 	background: url(../images/briefcase.png) no-repeat 17px 15px;
+}
+#about button a {
+	color: #616161;
+}
+#about button a:hover {
+	text-decoration: none;
+}
+#about button a:focus {
+	text-decoration: none;
 }
 #about img {
 	margin-top: 5px;
@@ -192,7 +200,7 @@ header p span {
 #services h2 span {
 	font-family: OpenSans-SemiBold;
 }
-#services .our_services_p {
+#services .our_services_p p {
 	font-size: 13px;
 	color: #6c6c6c;
 	font-family: OpenSans-Italic;
