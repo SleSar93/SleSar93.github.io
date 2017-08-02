@@ -32,7 +32,7 @@
 /******************Header******************/
 header {
 	background-color: #111111;
-	padding-bottom: 350px;
+	padding-bottom: 100px;
 }
 .logotype{
 	font-family: Lato-Bold;
@@ -78,6 +78,9 @@ header p {
 }
 header p span {
 	font-family: OpenSans-Bold;
+}
+header img {
+	padding-top: 250px;
 }
 
 /******************About*******************/
