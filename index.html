@@ -11,12 +11,12 @@
 	<header id="home">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-1 col-md-2 col-sm-3">
+				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
 					<h1 class="logotype">Spirit8</h1>
 				</div>
 				<div class="col-lg-6 col-lg-offset-5 col-md-10 col-sm-9 main_navbar">
 					<nav>
-						<ul class="list-inline">
+						<ul class="hidden-xs list-inline">
 							<li><a href="#home">Home</a></li>
 							<li><a href="#about">About</a></li>
 							<li><a href="#services">Services</a></li>
@@ -24,6 +24,23 @@
 							<li><a href="#testimonials">Testimonials</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
+					</nav>
+				</div>
+				<div class="visible-xs col-xs-3 col-xs-offset-5 main_navbar">
+					<nav>
+						<div class="dropdown">
+							<button id="dlabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyphicon glyphicon-menu-hamburger"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dlabel">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#services">Services</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#testimonials">Testimonials</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
 					</nav>
 				</div>
 			</div>
@@ -142,10 +159,10 @@
 				<p class="our_work_p">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book <br> is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in sec- <br>	tion 1.10.32.</p>
 			</div>
 			<div class="row">
-				<div class="col-lg-2">
+				<div class="col-lg-2 col-xs-4">
 					<strong>Filter by type</strong>
 				</div>
-				<div class="col-lg-10">
+				<div class="col-lg-10 col-xs-8">
 					<p class="text-right filters">
 						<span> All </span>  |  Web design  |  Mobile design  |  Photograpy
 					</p>
@@ -218,10 +235,10 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-5">
+				<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">
 					<p>All rights reserved. copyright © 2014 <strong> spirit8 </strong></p>
 				</div>
-				<div class="col-lg-3 col-lg-offset-5 col-md-3 col-md-offset-5 col-sm-4 col-sm-offset-3">
+				<div class="col-lg-3 col-lg-offset-5 col-md-3 col-md-offset-5 col-sm-4 col-sm-offset-3 col-xs-6 social">
 					<a href="#"><img src="images/facebook.png" alt="Facebook icon"></a>
 					<a href="#"><img src="images/twitter.png" alt="Twitter icon"></a>
 					<a href="#"><img src="images/google.png" alt="Google icon"></a>
@@ -231,8 +248,42 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="scripts/jquery.js"></script>
-	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#home").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+		top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1400);
+	});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#about").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+		top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1400);
+	});
+		});
+	</script>
 
 </body>
 </html>

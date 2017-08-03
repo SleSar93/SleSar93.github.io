@@ -388,14 +388,82 @@ footer .col-lg-4 {
 	padding-top: 6px;
 }
 /**********************************************Адаптив**********************************************/
-@media (min-width:0px) and (max-width:320px) {
-	
-}
-@media (min-width:321px) and (max-width:480px) {
+@media (min-width:0px) and (max-width:480px) {
+	#dlabel {
+		background-color: #111;
+		border: 1px #fcac45 solid;
+		padding: 10px 17px;
+	}
+	.dropdown {
+		position: relative;
+		bottom: 30px;
+		right: 60px;
+	}
+	#about h3 {
+		background: none;
+	}
+	#clients img {
+		padding-bottom: 15px;
+		padding-right: 0;
+	}
+	#portfolio img {
+		width: 100%;
+		height: auto;
+	}
+	#portfolio strong {
+		padding-left: 0 !important;
+	}
 	
 }
 @media (min-width:481px) and (max-width:768px) {
-	
+	#dlabel {
+		background-color: #111;
+		border: 1px #fcac45 solid;
+		padding: 10px 17px;
+	}
+	.dropdown {
+		position: relative;
+		bottom: 30px;
+		right: 60px;
+	}
+	#about img {
+		width: 100%;
+		height: auto;
+	}
+	#clients img {
+		padding-bottom: 20px
+	}
+	#portfolio img {
+		width: 100%;
+		height: auto;
+	}
+	#portfolio .filters {
+		font-size: 13px;
+		position: relative;
+		right: 5px;
+		width: 300px;
+	}
+	footer .social {
+		text-align: right;
+	}
+	#team h2 {
+		background: none;
+	}
+	#services h2 {
+		background: none;
+	}
+	#clients h2 {
+		background: none;
+	}
+	#portfolio h2 {
+		background: none;
+	}
+	#testimonials h2 {
+		background: none;
+	}
+	#contact h2 {
+		background: none;
+	}
 }
 @media (min-width:769px) and (max-width:992px) {
 	#about {
@@ -438,7 +506,6 @@ footer .col-lg-4 {
 	#contact h2 {
 		background: none;
 	}
-
 }
 @media (min-width:993px) and (max-width:1200px) {
 	#about img {
