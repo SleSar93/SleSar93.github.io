@@ -1,6 +1,6 @@
-/***************Basic styles***************/
+/**********************************************Basic styles**********************************************/
 
-/******************Fonts*******************/
+/**********************************************Fonts**********************************************/
 @font-face {
 	font-family: 'Gotham Book Regular';
 	src: url(../fonts/Gotham Book Regular.otf);
@@ -29,7 +29,7 @@
 	font-family: OpenSans-Bold;
 	src: url(../fonts/OpenSans-Bold.ttf);
 }
-/******************Header******************/
+/**********************************************Header**********************************************/
 header {
 	background-color: #111111;
 	padding-bottom: 100px;
@@ -83,7 +83,7 @@ header img {
 	padding-top: 250px;
 }
 
-/******************About*******************/
+/**********************************************About**********************************************/
 #about {
 	padding-top: 100px;
 	padding-bottom: 69px;
@@ -154,7 +154,7 @@ header img {
 #about img {
 	margin-top: 5px;
 }
-/******************Team********************/
+/**********************************************Team**********************************************/
 #team {
 	background-color: #070707;
 	padding-bottom: 112px;
@@ -187,7 +187,7 @@ header img {
 	color: #fff;
 	font-size: 16px;
 }
-/*****************Services*****************/
+/**********************************************Services**********************************************/
 #services {
 	padding-top: 60px;
 	padding-bottom: 100px;
@@ -220,7 +220,7 @@ header img {
 	font-size: 11px;
 	font-family: OpenSans-Italic;
 }
-/*****************Clients******************/
+/**********************************************Clients**********************************************/
 #clients {
 	background-color: #0b0b0b;
 	padding-bottom: 155px;
@@ -244,7 +244,7 @@ header img {
 	padding-top: 3px;
 	padding-right: 0px;
 }
-/****************Portfolio*****************/
+/**********************************************Portfolio**********************************************/
 #portfolio {
 	padding-top: 60px;
 	padding-bottom: 100px;
@@ -286,7 +286,7 @@ header img {
 #portfolio img {
 	padding-bottom: 30px;
 }
-/***************Testimonials***************/
+/**********************************************Testimonials**********************************************/
 #testimonials {
 	background-color: #0b0b0b;
 	padding-top: 60px;
@@ -318,7 +318,7 @@ header img {
 	text-transform: none;
 	color: #b2b2b2;
 }
-/*****************Contact******************/
+/**********************************************Contact**********************************************/
 #contact {
 	padding-top: 60px;
 	padding-bottom: 100px;
@@ -369,7 +369,7 @@ header img {
 	margin-top: 24px;
 	margin-left: 14px;
 }
-/******************Footer******************/
+/**********************************************Footer**********************************************/
 footer {
 	padding-top: 27px;
 	padding-bottom: 27px;
@@ -384,6 +384,106 @@ footer p {
 footer p strong {
 	font-family: OpenSans-Bold;
 }
-footer .col-md-4 {
+footer .col-lg-4 {
 	padding-top: 6px;
+}
+/**********************************************Адаптив**********************************************/
+@media (min-width:0px) and (max-width:320px) {
+	
+}
+@media (min-width:321px) and (max-width:480px) {
+	
+}
+@media (min-width:481px) and (max-width:768px) {
+	
+}
+@media (min-width:769px) and (max-width:992px) {
+	#about {
+		text-align: center;
+	}
+	#about h3 {
+		background: none;
+	}
+	#about ul li {
+		background: none;
+	}
+	#about img {
+		padding-bottom: 50px;
+	}
+	#team .col-md-6:nth-child(-n+2) {
+		padding-bottom: 70px;
+	}
+	#team h2 {
+		background: none;
+	}
+	#services .col-md-6:nth-child(-n+2) {
+		padding-bottom: 70px;
+	}
+	#services h2 {
+		background: none;
+	}
+	#clients h2 {
+		background: none;
+	}
+	#portfolio h2 {
+		background: none;
+	}
+	#portfolio img {
+		width: 113%;
+		height: auto;
+	}
+	#testimonials h2 {
+		background: none;
+	}
+	#contact h2 {
+		background: none;
+	}
+
+}
+@media (min-width:993px) and (max-width:1200px) {
+	#about img {
+		padding-top: 20px;
+	}
+	#about h3 {
+		background: none;
+	}
+	#team .col-md-6:nth-child(-n+2) {
+		padding-bottom: 70px;
+	}
+	#team .col-md-6 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#services h2 {
+		background: none;
+	}
+	#services .col-md-6:nth-child(-n+2) {
+		padding-bottom: 70px;
+	}
+	#services .col-md-6 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#services h2 {
+		background: none;
+	}
+	#clients h2 {
+		background: none;
+	}
+	#clients h2 {
+		background: none;
+	}
+	#portfolio h2 {
+		background: none;
+	}
+	#portfolio img {
+		width: 100%;
+		height: auto;
+	}
+	#testimonials h2 {
+		background: none;
+	}
+	#contact h2 {
+		background: none;
+	}
 }
